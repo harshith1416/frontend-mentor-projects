@@ -1,0 +1,124 @@
+:root {
+    font-size: calc(1vw + 0.6em);
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+ol, ul {
+	list-style: none;
+    padding-left: 0;
+}
+
+a { 
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signUpWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+.signUpWrapper > .image {
+    background-image: url("images/sign-up-mobile.svg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 35vh;
+    width: 100vw;
+}
+
+.signUpWrapper > .information {
+    display: flex;
+    flex-direction: column;
+}
+
+.information {
+    padding: 1.5em 1em;
+}
+
+.information > h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.information > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.thanksPageWrapper {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-icon {
+    margin: 0 0.7em 0.7em 0;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.labels > .validationError {
+    display: none;
+    color: red;
+    
+}
+
+.form > button {
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.form > input {
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+@media(min-width: 50em) {
+
+    body {
+        background-color: hsl(235, 18%, 26%);
+        padding: 4em;
+    }
+
+    .signUpWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signUpWrapper > .image {
+        background-image: url("images/sign-up-desktop.svg");
+    }
+}
